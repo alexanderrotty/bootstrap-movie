@@ -13,8 +13,7 @@ class movieController extends Controller
         $apiKey       = env('MOVIE_DB_API_KEY');
         $max_image    = 1;
         $max_image2    = 2;
-
-        $max_image_item = 10;
+        $max_image_item = 3;
 
         // Mengambil/Hit API untuk banner
         $bannerResponse = Http::get("{$baseURL}/trending/movie/week", [
